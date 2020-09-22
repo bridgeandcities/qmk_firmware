@@ -1,4 +1,4 @@
-/* Copyright 2020 Aaron Song
+/* Copyright 2020 Greg Zhou
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,11 +13,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "asok75.h"
+#include "puffazz_arisu.h"
 
 void matrix_init_kb(void) {
 	// put your keyboard start-up code here
 	// runs once when the firmware starts up
+
+	//setPinOutput(B2); /* Num Lock */
+	//setPinOutput(B1); /* Caps Lock */
+	//setPinOutput(B0); /* Scroll Lock */
 
 	matrix_init_user();
 }
